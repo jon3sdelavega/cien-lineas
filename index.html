@@ -20,54 +20,63 @@
 		<div id="wrapper">
 
 			<!-- Panel (Banner) -->
+			<!-- 1. CONTENEDOR PRINCIPAL (BANNER) -->
 			<section class="panel banner right">
-				<!-- Se amplió el ancho del contenedor principal a span-6.5 (casi el doble de span-3.75) -->
-				<div class="content color0 span-6-5">
-
-					<!-- NUEVO CONTENEDOR INICIO -->
+				<!-- Cambiamos a span-5 (un tamaño más amplio pero que NUNCA se saldrá de la pantalla) -->
+				<div class="content color0 span-7">
+			
 					<div class="bloque-portada-texto">
-
-						<!-- Contenedor para la imagen de la portada -->
 						<div class="portada-libro">
-							<img src="images/portada--libro-45.png" alt="Portada de 100 Líneas de Tiempo" />
+							<img src="images/portada--libro-60.png" alt="Portada de 100 Líneas de Tiempo" />
 						</div>
-
-						<!-- Contenedor para el texto -->
+			
 						<div class="texto-libro">
-							<h2 class="major">100 LÍNEAS DE TIEMPO DE LA HISTORIA UNIVERSAL</h2>
-							<p><strong>El libro que transforma siglos de historia en minutos de comprensión.</strong>, vamos a descubrir la Historia como nunca antes la habías visto
-							Una experiencia visual única</p>
+							<h3 class="major">100 LÍNEAS DE TIEMPO DE LA HISTORIA UNIVERSAL</h3>
+							<!-- <p><strong>⏳ 100 LÍNEAS DE TIEMPO DE LA HISTORIA UNIVERSAL</strong></p> -->
+							<p><strong>El libro que transforma siglos de historia en minutos de comprensión.</strong></p>
+							<p>📖 Descubre la Historia como nunca antes la habías visto. Una experiencia visual única.<br>
+			
+							Olvídate de los libros repletos de texto interminable. 100 Líneas de Tiempo de la Historia Universal
+								reúne los acontecimientos más importantes de la humanidad en un formato visual, claro, elegante y
+								fácil de comprender.<br>
+								✔ Más de 100 líneas de tiempo ilustradas<br>
+								✔ Diseño editorial PREMIUM<br>
+								✔ Información rigurosa y actualizada<br>
+								✔ Ideal para estudiantes, docentes y apasionados por la historia</p>			
+							<p>🌍 Recorre más de 5.000 años de historia... página a página</p>
+			
 							<ul class="actions">
-								<li><a href="#first"
-										class="button primary color1 circle icon solid fa-angle-right">Next</a></li>
+								<li><a href="#first" class="button primary color1 circle icon solid fa-angle-right">Next</a></li>
 							</ul>
 						</div>
-
 					</div>
-					<!-- NUEVO CONTENEDOR FIN -->
-
+			
 				</div>
-
-				<!-- ESTA IMAGEN SE MANTIENE DONDE VIENE ORIGINALMENTE (se amplió a span-3) -->
-				<div class="image filtered span-1" data-position="25% 25%">
+			
+				<!-- Le damos un poco más de espacio a la imagen del banner (span-2-5) -->
+				<div class="image filtered span-2-2" data-position="25% 25%">
 					<img src="images/pic01.jpg" alt="" />
 				</div>
 			</section>
-
-			<!-- Panel (Spotlight) -->
+			
+			<!-- 2. SEGUNDO CONTENEDOR (SPOTLIGHT DEL VIDEO) -->
 			<section class="panel spotlight medium right" id="first">
-				<div class="">
-					<video width="200" height="360" controls>
+				<!-- Añadimos la clase 'contenedor-video' a este div -->
+				<div class="contenedor-video">
+					<video height="500" controls loop autoplay>
 						<source src="images/video-libro.mp4" type="video/mp4">
 						Tu navegador no soporta la reproducción de videos.
 					</video>
-
 				</div>
-				<div class="content span-7">
+			
+				<!-- Ampliado a span-5 para que el contenido respire mejor -->
+				<div class="content span-5">
 					<h2 class="major">Más de 100 líneas de tiempo ilustradas</h2>
-					<p>Olvídate de los libros repletos de texto interminable. 100 Líneas de Tiempo de la Historia Universal reúne los
-					acontecimientos más importantes de la humanidad en un formato visual, claro, elegante y fácil de comprender.</p>
+					<p>Olvídate de los libros repletos de texto interminable. 100 Líneas de Tiempo de la Historia Universal reúne
+						los acontecimientos más importantes de la humanidad en un formato visual, claro, elegante y fácil de
+						comprender.</p>
 				</div>
+			
 				<div class="image filtered tinted" data-position="top left">
 					<img src="images/pic02.jpg" alt="" />
 				</div>

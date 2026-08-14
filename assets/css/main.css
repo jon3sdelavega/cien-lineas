@@ -3737,8 +3737,44 @@ input, select, textarea {
 			}
 	
 			.portada-libro {
-				width: 60%;
+				width: 80%;
 				/* En móvil, la hacemos un poco más ancha relative al ancho del teléfono */
-				max-width: 200px;
+				max-width: 400px;
 			}
+		}
+	
+		/* Acomodar portada e información lado a lado sin romper el diseño */
+		.bloque-portada-texto {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			gap: 1rem;
+		}
+	
+		.portada-libro {
+			flex: 0 0 700px;
+			max-width: 300px;
+		}
+	
+		.portada-libro img {
+			width: 100%;
+			height: auto;
+			display: block;
+		}
+	
+		.texto-libro {
+			flex: 1;
+		}
+
+		/* Centrado del video en la sección Spotlight */
+		.contenedor-video {
+			display: flex;
+			justify-content: center;
+			/* Centra horizontalmente */
+			align-items: center;
+			/* Centra verticalmente */
+			height: 100%;
+			/* Ocupa todo el alto disponible del panel */
+			padding: 0 2rem;
+			/* Opcional: espacio de respiración en los laterales */
 		}
