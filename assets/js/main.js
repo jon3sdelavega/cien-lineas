@@ -411,6 +411,36 @@
 
 			})();
 
+			document.addEventListener("DOMContentLoaded", function () {
+        var video = document.getElementById("miVideo");
+
+        if (video) {
+            // Asegura que esté silenciado para evitar el bloqueo del navegador
+            video.muted = true;
+
+            // Función para intentar reproducir
+            function iniciarVideo() {
+                video.play().catch(function (error) {
+                    console.log("El reproductor esperará la visualización del usuario:", error);
+                });
+            }
+
+            // Ejecuta inmediatamente al cargar
+            iniciarVideo();
+
+            // Asegura la reproducción cuando el usuario haga scroll hasta la sección (IntersectionObserver)
+            var observer = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        video.play();
+                    }
+                });
+            }, { threshold: 0.2 });
+
+            observer.observe(video);
+        }
+    });
+
 	// Dragging.
 		if (settings.dragging.enabled)
 			(function() {
