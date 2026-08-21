@@ -3753,7 +3753,7 @@ input, select, textarea {
 	
 		.portada-libro {
 			flex: 0 0 700px;
-			max-width: 300px;
+			max-width: 400px;
 		}
 	
 		.portada-libro img {
