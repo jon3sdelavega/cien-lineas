@@ -535,7 +535,7 @@ input, select, textarea {
 	@media screen and (max-width: 360px) {
 
 		html {
-			font-size: 11pt;
+			font-size: 12pt;
 		}
 
 	}
@@ -3862,7 +3862,7 @@ input, select, textarea {
 				/* Espaciado del texto destacado */
 				.destacado-descarga {
 					font-weight: bold;
-					font-size: 1.1rem;
+					font-size: 1.2rem;
 					margin-bottom: 1.2rem !important;
 				}
 		
@@ -3932,3 +3932,33 @@ input, select, textarea {
 						text-align: center;
 					}
 				}
+		/* =========================================================
+		AJUSTE DE TIPOGRAFÍA Y ESCALADO PROPORCIONAL
+		========================================================= */
+
+		/* 1. Incrementar el tamaño base para Pantallas Grandes / Computadoras */
+		html {
+			/* Por defecto suele estar en 16px (100%). Subirlo a 112.5% equivale a ~18px */
+			font-size: 130.5% !important;
+		}
+
+		/* 2. Incrementar la tipografía específicamente para Móviles y Tablets */
+		@media screen and (max-width: 980px) {
+			html {
+				/* Mantiene un tamaño cómodo (~17px) en teléfonos sin romper el flujo vertical */
+				font-size: 106.25% !important;
+			}
+
+			/* Ajuste fino del interlineado para evitar saltos de línea bruscos */
+			p {
+				line-height: 1.6 !important;
+				margin-bottom: 1rem !important;
+			}
+
+			/* Aumentar el tamaño de los encabezados principales en celulares */
+			h2.major,
+			h3.major {
+				font-size: 1.4rem !important;
+				margin-bottom: 1rem !important;
+			}
+		}
